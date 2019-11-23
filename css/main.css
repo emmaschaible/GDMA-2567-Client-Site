@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/* Utility */
+
+.float-right {
+    float: right;
+}
+
+.float-right li {
+    display: inline-block;
+}
+
+#newsletter {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+
+@media only screen and (max-width: 600px) {
+    nav li {
+        display: inline-block;
+    }
+  }
