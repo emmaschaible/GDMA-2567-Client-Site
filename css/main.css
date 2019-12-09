@@ -40,9 +40,39 @@
 4.0 - ELEMENTS 
 -------------------------------------------------------------- */
 
+/*-- List --*/
+a {
+    text-decoration: none;
+}
+
+/*-- Typography --*/
+h1, h2, h3, p, nav {
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+
 /*--------------------------------------------------------------
 6.0 - COMPONENTS 
 -------------------------------------------------------------- */
+
+/*-- Header --*/
+
+.wrapper {
+    background-image: url(\img/yellow-wall.jpg);
+    background-repeat: none;
+}
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 1170px) {
     .map {
@@ -137,6 +167,10 @@ footer nav li{
     margin-left:100px;
 }
 
+header nav li {
+    margin: 5em 5em 10em 0;
+}
+
 
 /* -- FORMS -- */ 
 
@@ -144,6 +178,27 @@ footer nav li{
 /*--------------------------------------------------------------
 7.0 - UTILITIES 
 -------------------------------------------------------------- */
+
+/*-- Color --*/
+
+header nav a{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 1170px) {
     #txt-center {
