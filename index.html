@@ -9,7 +9,9 @@
     <link rel="stylesheet" type="text/css" href="css/framework.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -18,8 +20,8 @@
     <header>
         <div class="wrapper">
             <div class="row">
-                <div class="col-sm-12 col-md-3">
-                    <img class="img-responsive" src="img/logo.png" alt="">
+                <div class="col-sm-7 col-md-3">
+                    <a href=""><img class="img-responsive" src="img/logo.png" alt=""></a>
                 </div>
                 <nav class="col-sm-12 col-md-9">
                     <ul>
@@ -31,7 +33,7 @@
             </div>
             <section class="row">
                 <div class="float-right col-sm-12 col-md-6">
-                        <img class="img-responsive" src="img/twin-finch-packaging.png" alt="">
+                    <img class="img-responsive" src="img/twin-finch-packaging.png" alt="">
                     <div>
                         <ul>
                             <li><img src="https://via.placeholder.com/20.png" alt=""></li>
@@ -45,38 +47,43 @@
                 <div class="col-sm-12 col-md-6 txt-">
                     <h1>Tis' The Season</h1>
                     <p>Evening Oak is our featured roast of the season. <br><b>Just $19.95/lb</b></p>
-                    <p class="btn"><a href="">Buy Now</a></p>
+                    <p><a href="#" class="btn">Buy Now</a></p>
                 </div>
             </section>
         </div>
     </header>
 
 
-    <div class="wrapper" id="our-process">
-        <div class="container">
-            <img class="img-responsive center" src="img/coffee-bean.png" alt="" >
-            <div class="float-text">
-            <div class="top-left">reduces hot spots <br>
-                which can damage <br>
-                coffee beans</div>
+    <section class="wrapper" id="our-process">
+        <header class="col-sm-12 col-md-12">
+            <h2>Our Process</h2>
+            <p>Our coffee is roasted in a hot air, refractory lined roaster with an <br>
+                extraordinary level of control. Learn to brew on your own!</p>
+        </header>
+        <div class="row">
+            <div class="col-sm-12 col-lg-3" id="relative">
+                <div>
+                    <p>reduces hot spots
+                        which can damage
+                        coffee beans</p>
+                </div>
 
-            <div class="bottom-left">offers virtually no <br>
-                control during the <br>
-                roasting process</div>
-
-            <div class="middle-right"> Coffee beans can’t <br>be understated
+                <div id="absolute">
+                    <p>offers virtually no
+                        control during the
+                        roasting process</p>
+                </div>
             </div>
+
+            <img src="img/coffee-bean.png" class="img-responsive" data-rjs="2" id="coffee-bean" alt="">
         </div>
-        </div>
-        
-
-    </div>
+    </section>
 
 
 
 
-    <div class="col-sm-12 col-md-12  txt-center container" id="our=products">
-        <div>
+    <div class="col-sm-12 col-md-12  txt-center container" id="our-products">
+        <div id="quote">
             <img src="https://via.placeholder.com/1170x260.png" alt="">
         </div>
         <p id="centered">“This extraordinary coffee almost defies description with its
@@ -90,10 +97,11 @@
                 <header>
                     <h2>Our Products</h2>
                     <p>Our coffee is roasted in a hot air, refractory lined roaster with an
-                        extraordinary level of control. <a href=""><b>Learn to brew on your own!</b></a></p>
+                        extraordinary level of control. <a class="txt-hover" href=""><b>Learn to brew on your
+                                own!</b></a></p>
                 </header>
             </div>
-            <div id="house-blend" class="col-sm-12 col-md-6 col-lg-3">
+            <div id="house-blend" class="col-sm-12 col-md-6 col-lg-3 row">
                 <img class="img-responsive" src="img/twin-finch-packaging.png" alt="">
                 <img src="https://via.placeholder.com/20.png" alt="">
                 <p>Cajamarca & Moyobamba Regions, Peru</p>
@@ -108,12 +116,12 @@
                 <p>Hint of citrus, complemented by flavors of dark<br>
                     chocolate, peanut </p>
 
-                <p><a href="">Buy Now</a></p>
+                <p><a href="#" class="btn">Buy Now</a></p>
             </div>
 
 
 
-            <div id="sunrise" class="col-sm-12 col-md-6 col-lg-3">
+            <div id="sunrise" class="col-sm-12 col-md-6 col-lg-3 row">
                 <img class="img-responsive" src="img/twin-finch-packaging.png" alt="">
                 <img src="https://via.placeholder.com/20.png" alt="">
                 <p>La Chiapas, Mexico</p>
@@ -126,14 +134,14 @@
                 <p>Light</p>
                 <p>Light, fruity acidity which complements its fully <br>
                     nutty body and unique spicy tones. </p>
-                <p><a href="">Buy Now</a></p>
+                <p><a href="#" class="btn">Buy Now</a></p>
             </div>
 
 
 
 
-            <div id="espresso" class="col-sm-12 col-md-6 col-lg-3">
-                    <img class="img-responsive" src="img/twin-finch-packaging.png" alt="">
+            <div id="espresso" class="col-sm-12 col-md-6 col-lg-3 row">
+                <img class="img-responsive" src="img/twin-finch-packaging.png" alt="">
                 <img src="https://via.placeholder.com/20.png" alt="">
                 <p>Latin America, Africa, Indonesia</p>
 
@@ -146,11 +154,11 @@
                 <p>Our featured roast of the season. Pungently rich <br>
                     and complex with hints of night-blooming <br>
                     flowers and coriander in aroma and cup. </p>
-                <p><a href="">Buy Now</a></p>
+                <p><a href="#" class="btn">Buy Now</a></p>
             </div>
 
-            <div id="midnight" class="col-sm-12 col-md-6 col-lg-3">
-                    <img class="img-responsive" src="img/twin-finch-packaging.png" alt="">
+            <div id="midnight" class="col-sm-12 col-md-6 col-lg-3 row">
+                <img class="img-responsive" src="img/twin-finch-packaging.png" alt="">
                 <img src="https://via.placeholder.com/20.png" alt="">
                 <p>Latin America</p>
 
@@ -163,27 +171,35 @@
                 <p>Our featured roast of the season. Pungently rich
                     and complex with hints of night-blooming
                     flowers and coriander in aroma and cup. </p>
-                <p><a href="">Buy Now</a></p>
+                <p><a href="#" class="btn">Buy Now</a></p>
             </div>
         </div>
     </section>
 
     <section id="newsletter" class="col-sm-12">
-        <header>
+        <header class="col-lg-3">
             <h2>Newsletter</h2>
         </header>
-        <form>
-            <input type="text" name="firstname" placeholder="First Name"><br>
-
-            <input type="text" name="email" placeholder="Email">
-        </form>
-
-        <p><a href="">Submit</a></p>
+        <div class="col-lg-7 row">
+        <form action="/users" method="post" style="margin:0;padding:0">
+            <div>
+              <input id="user_first_name" name="user[first_name]" size="30" type="text" placeholder="first name" />
+          
+              <input id="user_last_name" name="user[email]" size="30" type="text" placeholder="email"/>
+            </div>
+            </form>
+        </div>
+            
+        <div class="col-lg-2">
+            <a href=""><div class="btn-yellow">
+                <p>Submit</p>
+            </div></a>
+        </div>
     </section>
 
 
     <section class="come-visit">
-        <div class="txt-center visit">
+        <div class="txt-center visit col-sm-12 col-md-12">
             <header>
                 <h2>Come Visit Us</h2>
             </header>
@@ -193,53 +209,51 @@
                 at 457 NW Market Street. </p>
         </div>
 
-        <div class="col-sm-12 col-md-6 com-lg-6">
+        <div class="col-sm-12 col-md-6 com-lg-6 row">
             <div class="map">
                 <div class="google-map">
                     <iframe height="400" id="gmap_canvas"
-                        src="https://maps.google.com/maps?q=457%20Market%20St%2C%20Portland%20OR&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                        ></iframe>
+                        src="https://maps.google.com/maps?q=457%20Market%20St%2C%20Portland%20OR&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <div id="map-form" class="col-sm-12 col-md-6">
+    <div id="map-form" class="col-sm-12 col-md-6 row">
         <form>
             <input type="text" name="firstname" placeholder="First Name"><br>
-
-            <input type="text" name="lastname" placeholder="Last Name"><br>
 
             <input type="text" name="email" placeholder="Email"><br>
 
             <input type="text" name="message" placeholder="Send us a message!">
         </form>
-
-        <p><a href="">Submit</a></p>
+     <a href=""><div class="btn-yellow">
+            <p>Submit</p>
+        </div></a>
     </div>
 
     <footer class="col-lg-12">
         <div class="wrapper row">
-            <div class="col-sm-12 col-lg-4">
-            <img class="img-responsive col-lg-5" src="img/logo.png" alt="">
-        <nav>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="#our-products">Products</a></li>
-            <li><a href="#our-process">Our Process</a></li>
-        </ul>
-    </nav>
-</div>
+            <div class="col-sm-7 col-md-5 col-lg-7">
+                <a href=""><img class="img-responsive col-lg-5" src="img/logo.png" alt=""></a>
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="#our-products">Products</a></li>
+                        <li><a href="#our-process">Our Process</a></li>
+                    </ul>
+                </nav>
+            </div>
 
-    <div>
-        <ul id="sprites">
-            <li><a href="facebook.com">Facebook</a></li>
-            <li><a href="twitter.com">Twitter</a></li>
+            <div>
+                <ul id="sprites">
+                    <li><a href="facebook.com">Facebook</a></li>
+                    <li><a href="twitter.com">Twitter</a></li>
 
-        </ul>
-    </div>
-</div>
+                </ul>
+            </div>
+        </div>
     </footer>
 
 

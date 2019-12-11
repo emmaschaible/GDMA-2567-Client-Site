@@ -41,139 +41,172 @@
 -------------------------------------------------------------- */
 
 /*-- List --*/
+
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #FFFFFF;
+}
+
+#our-products a:hover {
+  color: #E3B500;
 }
 
 /*-- Typography --*/
-h1, h2, h3, p, nav {
-    font-family: 'Josefin Sans', sans-serif;
 
+h1, h2, h3, p, nav {
+  font-family: 'Josefin Sans', sans-serif;
 }
 
-h1, h2 {
-    font-weight: 700;
+h1,
+h2 {
+  font-weight: 700;
+}
+
+/*-- Forms --*/
+
+form input {
+  height: 2em;
+  width: 20em;
+}
+
+#map-form form input:last-child {
+  padding-bottom: 10em;
+}
+
+#newsletter form {
+  margin-top: 1em;
 }
 
 /*--------------------------------------------------------------
 6.0 - COMPONENTS 
 -------------------------------------------------------------- */
 
+/*-- Buttons --*/
+
+.btn {
+  -webkit-transition-duration: 0.6s;
+  /* Safari */
+  transition-duration: 0.6s;
+  border: .1em solid black;
+  color: #000000;
+  padding: .7em 2em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background: #000000;
+  color: #FFFFFF;
+}
+
+.btn-yellow {
+  -webkit-transition-duration: 0.6s;
+  /* Safari */
+  transition-duration: 0.3s;
+  border: .1em solid black;
+  color: #000000;
+  padding: 0 2em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.btn-yellow:hover {
+  background: #E3B500;
+  /* Green */
+  color: #FFFFFF;
+  border: .1em solid #E3B500;
+}
+
 /*-- Header --*/
 
-.wrapper {
-    background-image: url(\img/yellow-wall.jpg);
-    background-repeat: none;
+body > header {
+    background-image: url(../img/yellow-wall.jpeg);
 }
 
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 1170px) {
-    .map {
-        float: left;
-    }
+@media only screen and (min-width: 1170px) {
+  .map {
+    float: left;
+  }
 }
 
-@media only screen and (max-width: 1170px) {
-    .map {
-        float: left;
-    }
+#our-products img {
+  max-width: 100%;
 }
 
+@media only screen and (min-width: 1170px) {
+  .map {
+    float: left;
+  }
+}
 
 .map {
-    position:relative;
-    text-align:right;
-    height:500px;
-    width:100%;
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 100%;
 }
 
 .google-map {
-    overflow:hidden;
-    background:none!important;
-    height:500px;
-    width:100%;
+  overflow: hidden;
+  background: none!important;
+  height: 500px;
+  width: 100%;
 }
 
-body > section.come-visit > div.col-sm-12.col-md-5.com-lg-6{
-    float: right;
+body > section.come-visit > div.col-sm-12.col-md-5.com-lg-6 {
+  float: right;
 }
 
-#map-form, footer img {
-    float: left;
+#map-form,
+footer img {
+  float: left;
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-
-  /* Container holding the image and the text */
-  .container {
-    position: relative;
-    text-align: center;
-    color: black;
-  }
-
-  
-  /* Top Left text */
-  .top-left {
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    transform: translate(-50%, -50%);
-  }
-
-   /* Bottom Left text */
-   .bottom-left {
-    position: absolute;
-    top: 70%;
-    left: 10%;
-    transform: translate(-50%, -50%);
-  }
-
-   /* Middle Right text */
-   .middle-right {
-    position: absolute;
-    top: 50%;
-    left: 90%;
-    transform: translate(-50%, -50%);
-  }
-
-    /* Centered text */
-#centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  /* -- NAVIGATION -- */ 
-
-  nav ul li {
-    display: inline-block;
+#coffee-bean {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
-footer nav li{
-    display: block;
-    margin-left:100px;
+/* -- NAVIGATION -- */
+
+nav ul li {
+  display: block;
+  margin-bottom: 1em;
 }
 
-header nav li {
-    margin: 5em 5em 10em 0;
+footer nav li {
+  display: block;
+  margin-left: 100px;
 }
 
+@media only screen and (min-width: 1170px) {
+    header nav ul {
+    display: -webkit-box;
+  }
 
-/* -- FORMS -- */ 
+  header nav li {
+    padding-top: 5.5em;
+    margin-right: 5em;
+  }
+}
 
+@media only screen and (min-width: 760px) {
+    body > header > div > div > nav > ul {
+      display: -webkit-box;
+    }
+
+ 
+
+/* -- FORMS -- */
 
 /*--------------------------------------------------------------
 7.0 - UTILITIES 
@@ -181,61 +214,84 @@ header nav li {
 
 /*-- Color --*/
 
-header nav a{
-    color: black;
+header nav a {
+  color: #000000;
 }
 
+footer di{
+  background: #000000;
+}
 
+footer nav a {
+  color: #E3B500;
+}
 
+.btn-yellow a {
+  color: #000000;
+}
 
+.btn-yellow a:hover {
+  color: #FFFFFF;
+}
 
+/*-- Alignment --*/
 
+#our-process header {
+  text-align: center;
+}
 
+#absolute {
+  position: absolute;
+}
 
+#relative {
+  position: relative;
+}
 
+.center {
+  margin: 0 auto;
+}
 
+#newsletter form input {
+  display: inline-block;
+}
 
-
-
-
-
-
-@media only screen and (max-width: 1170px) {
-    #txt-center {
-        float: left;
-        text-align: left;
-    }
+@media only screen and (min-width: 1170px) {
+  #txt-center {
+    float: left;
+    text-align: left;
   }
+}
 
-.float-right, #sprites {
-    float: right;
+@media only screen and (min-width: 768px) {
+  #txt-center {
+    float: left;
+    text-align: left;
+  }
+}
+
+.float-right,
+#sprites {
+  float: right;
 }
 
 .float-right li {
-    display: inline-block;
+  display: inline-block;
 }
 
 #newsletter {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
-
-    .float-text {
-        display: none;
-    }
-    
-
-  .txt-center {
-    text-align: center;
+.float-text {
+  display: none;
 }
 
+.txt-center {
+  text-align: center;
+}
 
-
-
-
-
-
-  iframe {
-      width: 100%;
-  }
+iframe {
+  width: 100%;
+}
