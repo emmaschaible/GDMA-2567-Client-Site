@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /*--------------------------------------------------------------
 >>> CSS STANDARDS
 ----------------------------------------------------------------
@@ -43,255 +42,262 @@
 /*-- List --*/
 
 a {
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: #FFFFFF;
-}
-
-#our-products a:hover {
-  color: #E3B500;
+	text-decoration: none;
 }
 
 /*-- Typography --*/
 
 h1, h2, h3, p, nav {
-  font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
+}
+h1, h2 {
+	font-weight: 700;
 }
 
-h1,
-h2 {
-  font-weight: 700;
+span {
+	color: #E3B500;
+}
+
+form input {
+	height: 2em;
+	width: 20em;
 }
 
 /*-- Forms --*/
 
-form input {
-  height: 2em;
-  width: 20em;
-}
-
-#map-form form input:last-child {
-  padding-bottom: 10em;
-}
-
 #newsletter form {
-  margin-top: 1em;
+	margin-top: 1em;
 }
-
 /*--------------------------------------------------------------
 6.0 - COMPONENTS 
 -------------------------------------------------------------- */
 
+nav a:hover {
+	color: #FFFFFF;
+}
+.our-products a:hover {
+	color: #E3B500;
+}
+
+nav li, .our-products p {
+	font-weight: 300;
+}
+nav li {
+	text-transform: uppercase;
+}
+header nav, header p {
+	font-size: 19px;
+}
+#our-process>header>p {
+	font-size: 1em;
+}
+#centered {
+	font-size: 1.5em;
+	padding-top: 5em;
+	color: white;
+}
+
+#map-form form input:last-child {
+	padding-bottom: 10em;
+}
+
+@media only screen and (min-width: 1170px) {
+	#centered {
+		font-size: 1.9em;
+		padding-top: 3.5em;
+	}
+}
+
 /*-- Buttons --*/
 
 .btn {
-  -webkit-transition-duration: 0.6s;
-  /* Safari */
-  transition-duration: 0.6s;
-  border: .1em solid black;
-  color: #000000;
-  padding: .7em 2em;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+	-webkit-transition-duration: 0.6s;
+	/* Safari */
+	transition-duration: 0.6s;
+	border: .1em solid black;
+	color: #000000;
+	padding: .7em 2em;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
 }
-
 .btn:hover {
-  background: #000000;
-  color: #FFFFFF;
+	background: #000000;
+	color: #FFFFFF;
 }
-
 .btn-yellow {
-  -webkit-transition-duration: 0.6s;
-  /* Safari */
-  transition-duration: 0.3s;
-  border: .1em solid black;
-  color: #000000;
-  padding: 0 2em;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+	-webkit-transition-duration: 0.6s;
+	/* Safari */
+	transition-duration: 0.3s;
+	border: .1em solid black;
+	color: #000000;
+	padding: 0 2em;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
 }
-
 .btn-yellow:hover {
-  background: #E3B500;
-  /* Green */
-  color: #FFFFFF;
-  border: .1em solid #E3B500;
+	background: #E3B500;
+	/* Green */
+	color: #FFFFFF;
+	border: .1em solid #E3B500;
 }
-
+#our-process header, blockquote .col-md-8 {
+	margin: 0 auto;
+	float: none;
+}
 /*-- Header --*/
 
-body > header {
-    background-image: url(../img/yellow-wall.jpeg);
+body>header {
+	background-image: url(../img/yellow-wall.png);
 }
-
 @media only screen and (min-width: 1170px) {
-  .map {
-    float: left;
-  }
+	.map {
+		float: left;
+	}
 }
-
-#our-products img {
-  max-width: 100%;
+.our-products img {
+	max-width: 100%;
 }
-
 @media only screen and (min-width: 1170px) {
-  .map {
-    float: left;
-  }
+	.map {
+		float: left;
+	}
 }
-
 .map {
-  position: relative;
-  text-align: right;
-  height: 500px;
-  width: 100%;
+	position: relative;
+	text-align: right;
+	height: 500px;
+	width: 100%;
 }
-
 .google-map {
-  overflow: hidden;
-  background: none!important;
-  height: 500px;
-  width: 100%;
+	overflow: hidden;
+	background: none!important;
+	height: 500px;
+	width: 100%;
 }
-
-body > section.come-visit > div.col-sm-12.col-md-5.com-lg-6 {
-  float: right;
+body>section.come-visit>div.col-sm-12.col-md-5.com-lg-6 {
+	float: right;
 }
-
-#map-form,
-footer img {
-  float: left;
+#map-form, footer img {
+	float: left;
 }
-
-#coffee-bean {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+h1:after {
+	display: block;
+	width: 8em;
+	padding-top: .4em;
+	content: "";
+	border-bottom: .1rem solid black;
 }
-
+#products header+p {
+	border-bottom: .1rem solid black;
+}
+body>header p:nth-child(3) {
+	padding-top: 1em;
+}
+body>header>div>section>div.col-sm-12.col-md-6.txt- {
+	padding-top: 200px;
+}
 /* -- NAVIGATION -- */
 
 nav ul li {
-  display: block;
-  margin-bottom: 1em;
+	display: block;
+	margin-bottom: 1em;
 }
-
 footer nav li {
-  display: block;
-  margin-left: 100px;
+	display: block;
+	margin-left: 100px;
 }
-
 @media only screen and (min-width: 1170px) {
-    header nav ul {
-    display: -webkit-box;
-  }
-
-  header nav li {
-    padding-top: 5.5em;
-    margin-right: 5em;
-  }
+	header nav ul {
+		display: -webkit-box;
+	}
+	header nav li {
+		padding-top: 5.5em;
+		margin-right: 5em;
+	}
 }
-
 @media only screen and (min-width: 760px) {
-    body > header > div > div > nav > ul {
-      display: -webkit-box;
-    }
-
- 
-
+	body>header>div>div>nav>ul {
+		display: -webkit-box;
+	}
+}
 /* -- FORMS -- */
 
 /*--------------------------------------------------------------
 7.0 - UTILITIES 
 -------------------------------------------------------------- */
 
+.center {
+	margin: 0 auto;
+}
+#review {
+	background-image: url(../img/98-review.png);
+	height: 350px;
+}
 /*-- Color --*/
 
 header nav a {
-  color: #000000;
+	color: #000000;
 }
-
-footer di{
-  background: #000000;
-}
-
 footer nav a {
-  color: #E3B500;
+	color: #E3B500;
 }
-
+footer {
+	background-color: black;
+}
 .btn-yellow a {
-  color: #000000;
+	color: #000000;
 }
-
 .btn-yellow a:hover {
-  color: #FFFFFF;
+	color: #FFFFFF;
 }
-
 /*-- Alignment --*/
 
 #our-process header {
-  text-align: center;
+	text-align: center;
 }
-
 #absolute {
-  position: absolute;
+	position: absolute;
+	top: 200px;
+	left: 0;
 }
-
 #relative {
-  position: relative;
+	position: relative;
 }
-
-.center {
-  margin: 0 auto;
-}
-
 #newsletter form input {
-  display: inline-block;
+	display: inline-block;
 }
-
 @media only screen and (min-width: 1170px) {
-  #txt-center {
-    float: left;
-    text-align: left;
-  }
+	#txt-center {
+		float: left;
+		text-align: left;
+	}
 }
-
 @media only screen and (min-width: 768px) {
-  #txt-center {
-    float: left;
-    text-align: left;
-  }
+	#txt-center {
+		float: left;
+		text-align: left;
+	}
 }
-
-.float-right,
-#sprites {
-  float: right;
+.float-right, #sprites {
+	float: right;
 }
-
 .float-right li {
-  display: inline-block;
+	display: inline-block;
 }
-
 #newsletter {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
 }
-
 .float-text {
-  display: none;
+	display: none;
 }
-
 .txt-center {
-  text-align: center;
+	text-align: center;
 }
-
 iframe {
-  width: 100%;
+	width: 100%;
 }
