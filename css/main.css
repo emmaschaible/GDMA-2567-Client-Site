@@ -58,6 +58,16 @@ span {
 	color: #E3B500;
 }
 
+p {
+	font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 1170px) {
+	p {
+		font-size: 1rem;
+	}
+}
+
 
 /*-- Forms --*/
 
@@ -112,10 +122,10 @@ header nav, header p {
 	display: block;
 }
 
+
 /*-- Buttons --*/
 
 .btn {
-	-webkit-transition-duration: 0.6s;
 	/* Safari */
 	transition-duration: 0.6s;
 	border: .1em solid black;
@@ -131,7 +141,6 @@ header nav, header p {
 	color: #FFFFFF;
 }
 .btn-yellow {
-	-webkit-transition-duration: 0.6s;
 	/* Safari */
 	transition-duration: 0.3s;
 	border: .1em solid black;
@@ -144,9 +153,8 @@ header nav, header p {
 }
 .btn-yellow:hover {
 	background: #E3B500;
-	/* Green */
 	color: #FFFFFF;
-	border: .1em solid #E3B500;
+	border: .1em solid;
 }
 #our-process header, blockquote .col-md-8 {
 	margin: 0 auto;
@@ -156,6 +164,7 @@ header nav, header p {
 
 body>header {
 	background-image: url(../img/yellow-wall.png);
+	background-repeat: no-repeat;
 }
 @media only screen and (min-width: 1170px) {
 	.map {
@@ -217,13 +226,10 @@ footer nav li {
 	header nav li {
 		margin-top: 5.5em;
 		margin-right: 5em;
+		display: inline-block;
 	}
 }
-ç {
-	body>header>div>div>nav>ul {
-		display: -webkit-box;
-	}
-}
+
 /* -- FORMS -- */
 
 /*--------------------------------------------------------------
