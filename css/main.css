@@ -58,19 +58,16 @@ span {
 	color: #E3B500;
 }
 
-form input {
-	height: 2em;
-	width: 20em;
-}
 
 /*-- Forms --*/
+
+/*--------------------------------------------------------------
+6.0 - COMPONENTS 
+-------------------------------------------------------------- */
 
 #newsletter form {
 	margin-top: 1em;
 }
-/*--------------------------------------------------------------
-6.0 - COMPONENTS 
--------------------------------------------------------------- */
 
 nav a:hover {
 	color: #FFFFFF;
@@ -89,23 +86,30 @@ header nav, header p {
 	font-size: 19px;
 }
 #our-process>header>p {
-	font-size: 1em;
+	font-size: 1rem;
 }
 #centered {
-	font-size: 1.5em;
-	padding-top: 5em;
-	color: white;
+	font-size: 1.5rem;
+	color: #FFFFFF;
 }
 
 #map-form form input:last-child {
-	padding-bottom: 10em;
+	margin-bottom: 10em;
 }
 
 @media only screen and (min-width: 1170px) {
 	#centered {
-		font-size: 1.9em;
-		padding-top: 3.5em;
+		font-size: 1.9rem;
 	}
+}
+
+#newsletter form input{
+	display: inline-block;
+	width: 30%;
+}
+
+.come-visit form input {
+	display: block;
 }
 
 /*-- Buttons --*/
@@ -132,7 +136,7 @@ header nav, header p {
 	transition-duration: 0.3s;
 	border: .1em solid black;
 	color: #000000;
-	padding: 0 2em;
+	padding: 1em 2em;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
@@ -161,11 +165,7 @@ body>header {
 .our-products img {
 	max-width: 100%;
 }
-@media only screen and (min-width: 1170px) {
-	.map {
-		float: left;
-	}
-}
+
 .map {
 	position: relative;
 	text-align: right;
@@ -186,8 +186,8 @@ body>section.come-visit>div.col-sm-12.col-md-5.com-lg-6 {
 }
 h1:after {
 	display: block;
-	width: 8em;
-	padding-top: .4em;
+	width: 80%;
+	margin-top: .4em;
 	content: "";
 	border-bottom: .1rem solid black;
 }
@@ -195,31 +195,31 @@ h1:after {
 	border-bottom: .1rem solid black;
 }
 body>header p:nth-child(3) {
-	padding-top: 1em;
+	margin-top: 1em;
 }
-body>header>div>section>div.col-sm-12.col-md-6.txt- {
-	padding-top: 200px;
+body > header > div > div:nth-child(2) > div.col-sm-12.col-md-6.txt- {
+	margin-top: 200px;
 }
 /* -- NAVIGATION -- */
 
-nav ul li {
+nav ul li, footer nav li {
 	display: block;
+}
+
+nav ul li {
 	margin-bottom: 1em;
 }
 footer nav li {
-	display: block;
 	margin-left: 100px;
 }
 @media only screen and (min-width: 1170px) {
-	header nav ul {
-		display: -webkit-box;
-	}
+
 	header nav li {
-		padding-top: 5.5em;
+		margin-top: 5.5em;
 		margin-right: 5em;
 	}
 }
-@media only screen and (min-width: 760px) {
+ç {
 	body>header>div>div>nav>ul {
 		display: -webkit-box;
 	}
@@ -235,7 +235,7 @@ footer nav li {
 }
 #review {
 	background-image: url(../img/98-review.png);
-	height: 350px;
+	padding: 1em 0;
 }
 /*-- Color --*/
 
@@ -245,12 +245,15 @@ header nav a {
 footer nav a {
 	color: #E3B500;
 }
-footer {
-	background-color: black;
+body > footer {
+	background-color: #000000;
 }
+
+footer
 .btn-yellow a {
 	color: #000000;
 }
+
 .btn-yellow a:hover {
 	color: #FFFFFF;
 }
@@ -270,18 +273,21 @@ footer {
 #newsletter form input {
 	display: inline-block;
 }
-@media only screen and (min-width: 1170px) {
-	#txt-center {
-		float: left;
-		text-align: left;
-	}
-}
+
 @media only screen and (min-width: 768px) {
 	#txt-center {
 		float: left;
 		text-align: left;
 	}
 }
+
+@media only screen and (min-width: 1170px) {
+	#txt-center {
+		float: left;
+		text-align: left;
+	}
+}
+
 .float-right, #sprites {
 	float: right;
 }
@@ -289,8 +295,8 @@ footer {
 	display: inline-block;
 }
 #newsletter {
-	border-top: 2px solid black;
-	border-bottom: 2px solid black;
+	border-top: 2px solid #000000;
+	border-bottom: 2px solid #000000;
 }
 .float-text {
 	display: none;
